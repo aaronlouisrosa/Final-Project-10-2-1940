@@ -1,0 +1,113 @@
+* {
+  background-color: #abaeb2;
+  /*to display the layout of the page*/
+/*  border: 1px solid; */
+  margin-top: 0;
+
+}
+
+ #wrapper {
+     max-width: 1200px;
+     margin: auto;
+     
+}
+
+#floating-top {
+  position: fixed;
+/*   width: 100%; this is not good to use for fixed elements. Better to use left/right */
+  left: 0;
+  right: 0;
+  
+  
+}
+#not-floating-part {
+  padding-top: 45%;
+  padding-left: 20px;
+}
+h1 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+
+#header {
+  
+  left: 39%;
+  display: block;
+}
+#header p{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+  margin: 0px;
+  padding: 2px;
+}
+
+.circle {
+    display: block;
+  /*code copied from a website to make the image appear circular*/
+    border-radius: 60%;
+    -moz-border-radius: 60%;
+    -webkit-border-radius: 60%;
+    -o-border-radius: 60%;
+    width: 150px;
+  /*to center the image*/
+    margin: 10px auto;
+}
+/*Formatting all the major categories instead of using headers*/
+p.categories {
+  text-align: left;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+}
+
+#first-space {
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: 'Armata', sans-serif;
+  color: #0b491d;
+  font-size: 18px;
+}
+h2 {
+  text-align: left;
+  font-family: 'Raleway', sans-serif;
+}
+p {
+  font-size: 14px;
+  font-family: 'Playfair Display', serif;
+}
+ul{
+  font-family: 'Playfair Display', serif;
+}
+
+}
+@media only screen and (max-width: 1200px) {
+  
+   #not-floating-part {
+    padding-top: 35%;
+  }
+  
+}
+
+@media only screen and (max-width: 1000px) {
+  
+   #not-floating-part {
+    padding-top: 45%;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  
+   #not-floating-part {
+    padding-top: 55%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  
+   #floating-top {
+    position: relative; 
+  }
+     #not-floating-part {
+    padding-top: 10px;
+  }
+}
